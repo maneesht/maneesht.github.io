@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.about-btn {
+    margin-top: 2%;
+    background: white;
+    color: #1976D2;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url(images/background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.margin-small {
+    margin-top: 7%;
+}
+
+.margin-medium {
+    margin-top: 7%;
+}
+
+.name-about {
+    color: white;
+    font-weight: 800;
+    font-size: 45px; 
+}
+
+.large-p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.full-page {
+    height: 100%;
+    width: 100%;
+}
+
+.experience-background {
+    background: url(images/background3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.top-page {
+    height: 100%;
+    background: url(images/about-background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.about-block {
+    font-weight: 800;
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+* {
+    font-family: "main-font";  
+}
