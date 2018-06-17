@@ -1,70 +1,182 @@
+* {
+    margin: 0;
+}
 html, body {
     height: 100%;
     padding: 0;
-    margin: 0;
+    font-family: BebasNeue, Arial, Helvetica, sans-serif;
 }
-
-.about-btn {
-    margin-top: 2%;
-    background: white;
-    color: #1976D2;
+.center {
+    text-align: center;
 }
-
+.padding-top {
+    padding-top: 20px;
+}
+.float-left {
+    float: left;
+    width: 70%;
+}
+.skills {
+    margin-top: 2px;
+}
+.text-right {
+    text-align: right;
+}
+.proficient {
+    width: 75%;
+    background: #448AFF;
+}
+.expert {
+    width: 100%;
+    background: #00E676;
+}
+.relative-container {
+    position: relative;
+}
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+.intermediate {
+    width: 50%;
+}
+.skill {
+    border-radius: 2px;
+    border: 2px solid #448AFF;;
+    margin: 2px;
+    padding: 3px;
+}
+#experience {
+    background: #448AFF;
+}
+.nav {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+.left-panel {
+    float: left;
+    width: 20%;
+}
+.right-panel {
+    width: 80%;
+    float: right;
+}
+#contact {
+    background-color: #F5F5F5;
+    min-height: 150px;
+}
+.text-sm {
+    font-size: 1.25rem;
+}
+#about {
+    min-height: 250px;
+}
+.float-right {
+    float: right;
+    width: 30%;
+}
+.center {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.padding {
+    padding: 50px;
+}
+.rounded {
+    border-radius: 10px;
+}
+.clear-both {
+    clear: both;
+}
+.center-img {
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
 .flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
+}
+.shadow {
+    border-radius: 4px;
+    -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+}
+.margin-top {
+    margin-top: 10px;
+}
+.w-50 {
+    width: 50%;
+}
+.panel {
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    width: 50%;
+    flex: 1;
+    background-color: white;
+    color: black;
+    flex: none;
+    padding: .50rem;
+}
+.sm-profile-img {
+    width: 20%;
+}
+.profile-img {
+    width: 50%;
+}
+
+/* If the text has multiple lines, add the following: */
+.center h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.text-lg {
+    font-size: 3.0rem;
+}
+ul {
+    list-style-type: none;
+    font-family: BebasNeueLight;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url("/BebasNeue\ Regular.otf");
+}
+@font-face {
+    font-family: BebasNeueLight;
+    src: url("/BebasNeue\ Light.otf");
+}
+.margin-right {
+    margin-right: 20px;
+}
+.white-bg {
+    background-color: white;
+}
+.text-md {
+    font-size: 1.75rem;
+}
+.text-center {
+    text-align: center;
+}
+.full-height {
     height: 100%;
-    width: 100%;
-    background: url(images/background.jpg) no-repeat center center fixed;
-    background-size: cover;
 }
-
-.margin-small {
-    margin-top: 7%;
-}
-
-.margin-medium {
-    margin-top: 7%;
-}
-
-.name-about {
-    color: white;
-    font-weight: 800;
-    font-size: 45px; 
-}
-
-.large-p {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.experience-background {
-    background: url(images/background3.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-.top-page {
-    background: url(images/about-background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.about-block {
-    font-weight: 800;
+.white-text {
     color: white;
 }
-
-.bold {
-    font-weight: bold;
+.grey-bg {
+    background-color: #1c1e26;
 }
 
-.underline {
-    text-decoration: underline;
-}
-
-* {
-    font-family: "main-font";  
-}

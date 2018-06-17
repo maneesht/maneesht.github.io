@@ -1,25 +1,96 @@
-<html ng-app="resume">
+<!DOCTYPE html>
+<html>
     <head>
-        <title>Maneesh Tewani Resume</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <link href="styles.css" rel="stylesheet" type="text/css"/>
-        <script src="lib/jquery/dist/jquery.js"></script>
-        <script src="lib/angular/angular.js"></script>
-        <script src="lib/angular-route/angular-route.js"></script>
-        <script src="app/pageService.js"></script>
-        <script src="app/pageCtrl.js"></script>
-        <script src="app/app.js"></script>
+        <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <div ng-controller="pageCtrl as pc">
-            <ul class="nav nav-tabs" style="background: white;">
-                <li role="presentation", ng-class="{'active': !pc.getPage()}"><a href="#/">Home</a></li>
-                <li role="presentation", ng-class="{'active': pc.getPage() === 'about'}"><a href="#/about">About</a></li>
-                <li role="presentation", ng-class="{'active': pc.getPage() === 'experience'}"><a href="#/experience">Experience</a></li>
-                <li><a href="ManeeshTewaniResume.pdf" download>Resume</a></li>
-            </ul>
+        <div class="full-height grey-bg relative-container">
+            <div class="center text-lg">
+                <h1 class="text-center white-text">MANEESH TEWANI</h1>
+                <h4 class="text-center white-text">SOFTWARE DEVELOPER. INSTRUCTOR. SCREENWRITER.</h4>
+                <h4 class="text-center white-text">NOT IN THAT ORDER.</h4>
+            </div>
+            <div class="nav text-lg">
+                <a href="#about" class="text-center white-text">ABOUT</a>
+                <a href="#experience" class="text-center white-text">EXPERIENCE</a>
+                <a href="#contact" class="text-center white-text">CONTACT</a>
+            </div>
         </div>
-        <ng-view></ng-view> 
+        <div id="about" class="white-bg padding full-height text-lg">
+            <h1 class="text-center padding-top">ABOUT</h1>
+            <img class="sm-profile-img rounded center-img" src="maneesh-profile.jpg">
+            <p class="text-center text-md">Hi, I'm Maneesh. I've been interested in Software ever since I was
+                fifteen years old. Since 2014, I've been primarily a web developer, Android developer, and 
+                professional instructor.
+                <br>
+                Ever since then, my main goal has been improving my current skills and learning new ones. </p>
+            </p>
+        </div>
+        <div id="experience" class="white-text text-md clear-both">
+            <h1 class="text-center padding-top">EXPERIENCE</h1>
+            <div class="container">
+                    <div class="shadow">
+                <div class="flex-container">
+                    <div class="panel">
+                        <img class="margin-top" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4X-LtuOFyis83YjGj0SG2NYRPuOM-E-xeJxdGDWCwL3JZkk4fNGLG5WA">
+                        <div> Intern/Co-Op Software Developer (2016 - Present)</div>
+                        <p class="text-sm">
+                            Working for CCG, I was able to create 2 PoCs (Proof-of-Concept). Each PoC was based on "hot topics" such as Computer Vision and Machine Learning/skil.
+                            Use-Cases spanned anywhere from IoT to Autonomous Driving Scenarios.
+                            Over the course of the two years I worked on demos that were displayed at MWC 2017, CES 2017, MWC 2018, Google I/O 2018, and Computex 2018
+                        </p>
+                        <div class="text-sm skills">
+                            <span class="skill"> Computer Vision </span>
+                            <span class="skill"> Android Application Development </span>
+                            <span class="skill"> NDK </span>
+                            <span class="skill"> CMake </span>
+                            <span class="skill"> Java </span>
+                            <span class="skill"> C/C++ </span>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <img class="margin-top" src="https://oasisdigital.com/images/od-logo.svg" height="118px">
+                        <div> Angular Bootcamp Instructor (2016 - Present) | Project Lead | Intern/Co-Op Software Developer</div>
+                        <p class="text-sm"> Currently working as a professional Angular instructor for Angular Bootcamp. As an instructor, I go around the world
+                            and teach other individuals (public and private) the latest best practices and techniques of the latest version of Angular
+                        </p>
+                        <div class="skills text-sm">
+                            <span class="skill"> Teaching </span>
+                            <span class="skill"> HTML & CSS </span>
+                            <span class="skill"> JavaScript </span>
+                            <span class="skill"> Node.js </span>
+                            <span class="skill"> TypeScript </span>
+                            <span class="skill"> Webpack </span>
+                            <span class="skill"> Gulp </span>
+                        </div>
+                            
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="clear-both text-md">
+            <h1 class="text-center padding-top">CONTACT</h1>
+            <div>
+                <div>
+                    <p class="text-center">Email: <a href="mailto:maneesh.tewani@gmail.com" class="text-center">maneesh.tewani@gmail.com</a></p>
+                    <p class="text-center">Phone Number: (314)-629-6356</p>
+                    <p class="text-center">Github: <a target="_blank" href="https://github.com/maneesht">maneesht</a></p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
+<!--
+<div>Skills:</div>
+                        <ul>
+                            <li> Computer Vision </li>
+                            <li> Android Application Development </li>
+                            <li> NDK </li>
+                            <li> CMake </li>
+                            <li> Java </li>
+                            <li> C/C++ </li>
+                        </ul>
+<div>Skills:</div>
+                        
+-->
