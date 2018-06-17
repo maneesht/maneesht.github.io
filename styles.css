@@ -33,13 +33,16 @@ html, body {
 .relative-container {
     position: relative;
 }
+.w-40 {
+    width: 40%;
+}
 .container {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
 }
 .intermediate {
     width: 50%;
@@ -108,16 +111,13 @@ html, body {
     
 }
 .shadow {
-    border-radius: 4px;
+    /*border-radius: 4px;
     -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);*/
 }
 .margin-top {
     margin-top: 10px;
-}
-.w-50 {
-    width: 50%;
 }
 .panel {
         display: block;
@@ -128,7 +128,6 @@ html, body {
     flex: 1;
     background-color: white;
     color: black;
-    flex: none;
     padding: .50rem;
 }
 .sm-profile-img {
