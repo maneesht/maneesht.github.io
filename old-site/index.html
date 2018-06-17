@@ -1,0 +1,25 @@
+<html ng-app="resume">
+    <head>
+        <title>Maneesh Tewani Resume</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-route/angular-route.js"></script>
+        <script src="app/pageService.js"></script>
+        <script src="app/pageCtrl.js"></script>
+        <script src="app/app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="pageCtrl as pc">
+            <ul class="nav nav-tabs" style="background: white;">
+                <li role="presentation", ng-class="{'active': !pc.getPage()}"><a href="#/">Home</a></li>
+                <li role="presentation", ng-class="{'active': pc.getPage() === 'about'}"><a href="#/about">About</a></li>
+                <li role="presentation", ng-class="{'active': pc.getPage() === 'experience'}"><a href="#/experience">Experience</a></li>
+                <li><a href="ManeeshTewaniResume.pdf" download>Resume</a></li>
+            </ul>
+        </div>
+        <ng-view></ng-view> 
+    </body>
+</html>
